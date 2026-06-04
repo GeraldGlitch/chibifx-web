@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chibi-FX - The cute, lightweight, and cat-approved 2D VTuber software. Bring your custom avatar to life with mic-based lip sync.">
+    <meta name="keywords" content="VTuber, 2D avatar, Godot, lip sync, streaming, chibi, creator">
+    <title>Chibi-FX — Cute & Lightweight 2D VTuber Companion</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- NAV -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-container">
+        <a href="#" class="nav-logo">
+          <span class="logo-emoji">🐱</span>
+          <span class="logo-text">Chibi<span class="logo-highlight">FX</span></span>
+        </a>
+        <ul class="nav-menu">
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#mascot" class="nav-link">Meet Kuro</a></li>
+          <li><a href="#how-it-works" class="nav-link">How it Works</a></li>
+          <li><a href="#roadmap" class="nav-link">Roadmap</a></li>
+        </ul>
+        <a href="https://geraldglitch.itch.io/chibifx" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Download</a>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>100% Cat Approved Development</span>
+          </div>
+          <h1>Your Cute &amp; Lightweight <span class="text-gradient">2D VTuber</span> Companion</h1>
+          <p class="hero-subtitle">
+            Bring your custom animated avatar to life for streaming, content creation, and videos. Simple setup, zero fuss, and definitely doesn't knock cups off tables.
+          </p>
+          <div class="hero-actions">
+            <a href="https://geraldglitch.itch.io/chibifx" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-primary">
+              Download on Itch.io
+              <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </a>
+            <a href="#features" class="btn btn-lg btn-secondary">Learn More</a>
+          </div>
+          <div class="hero-tags">
+            <span class="hero-tag">Powered by Godot</span>
+            <span class="hero-tag">Desktop App</span>
+            <span class="hero-tag">Free & Open Source</span>
+          </div>
+        </div>
+        
+        <div class="hero-visual">
+          <div class="mascot-wrapper">
+            <img src="mascot.png" alt="Chibi-FX Mascot - Fluffy black cat with big green eyes" class="mascot-img">
+            <!-- Floating interactive chips -->
+            <div class="floating-badge badge-top">
+              <span class="badge-icon">🎤</span>
+              <span>Lip sync ready</span>
+            </div>
+            <div class="floating-badge badge-bottom">
+              <span class="badge-icon">🟩</span>
+              <span>OBS Chroma Key</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tagline">Why Choose Chibi-FX?</span>
+          <h2>Tail-Waggingly Simple Features</h2>
+          <p>We cut out the bloat so you can focus on being entertaining. Here is what's under the hood.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-icon">🎭</div>
+            <h3>Real-Time Avatar Animation</h3>
+            <p>Animate your character instantly while streaming or recording. No lag, no stutter, just pure performance.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🎤</div>
+            <h3>Microphone-Based Lip Sync</h3>
+            <p>Automatic mouth movements driven entirely by your voice input. It matches your speech patterns organically.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🎚️</div>
+            <h3>Adjustable Sensitivity</h3>
+            <p>Fine-tune input sensitivity thresholds to match your specific microphone and speaking style.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🪶</div>
+            <h3>Lightweight &amp; Easy</h3>
+            <p>A simple setup with a clean, focused user interface. No need for a degree in 3D modeling to get started.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🟩</div>
+            <h3>Green Screen Support</h3>
+            <p>Perfect for OBS, Streamlabs, and other production software. Transparency setup takes seconds.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">⚙️</div>
+            <h3>Built with Godot</h3>
+            <p>Robust, open-source performance that runs cleanly in the background without hogging your CPU.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MASCOT SPOTLIGHT (FUNNY & PROFESSIONAL) -->
+    <section class="section bg-alt" id="mascot">
+      <div class="container">
+        <div class="mascot-spotlight">
+          <div class="mascot-spotlight-img">
+            <img src="mascot.png" alt="Mascot Kuro" class="spotlight-mascot">
+          </div>
+          <div class="mascot-spotlight-content">
+            <span class="section-tagline">Meet the Boss</span>
+            <h2>Kuro, Chief Officer of Fluff</h2>
+            <p>
+              Unlike other VTuber applications with complicated setups, Kuro demanded that Chibi-FX be simple enough for a cat to use. Our development process was strictly supervised to ensure high-priority features like nap-friendly UI layouts and feather-light resource usage.
+            </p>
+            <blockquote>
+              "Meow, meow. Purrrr." 
+              <cite>— Kuro (Analyzing Microphone Sensitivity)</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tagline">Quick Setup</span>
+          <h2>Zero to Streaming in 5 Steps</h2>
+        </div>
+        <div class="steps-container">
+          <div class="step-card">
+            <div class="step-num">1</div>
+            <h4>Download</h4>
+            <p>Get the latest release executable directly from our Itch.io page.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">2</div>
+            <h4>Launch</h4>
+            <p>Open Chibi-FX. No complex installation or accounts required.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">3</div>
+            <h4>Load Avatar</h4>
+            <p>Import your custom 2D animated avatar frames directly into the dashboard.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">4</div>
+            <h4>Configure Audio</h4>
+            <p>Select your microphone and adjust thresholds to match your speaking style.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">5</div>
+            <h4>Create Content!</h4>
+            <p>Set up Chroma Key in OBS and start recording or streaming immediately.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROADMAP -->
+    <section class="section bg-alt" id="roadmap">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tagline">Future Updates</span>
+          <h2>The Kitten Steps Ahead</h2>
+          <p>Here is what we are cooking up to make Chibi-FX even more purr-fect.</p>
+        </div>
+        <div class="roadmap-grid">
+          <div class="roadmap-item">
+            <span class="roadmap-icon">🎨</span>
+            <span>More avatar customization options</span>
+          </div>
+          <div class="roadmap-item">
+            <span class="roadmap-icon">😊</span>
+            <span>Additional facial expressions</span>
+          </div>
+          <div class="roadmap-item">
+            <span class="roadmap-icon">🎭</span>
+            <span>Expanded animation controls</span>
+          </div>
+          <div class="roadmap-item">
+            <span class="roadmap-icon">🎯</span>
+            <span>Improved voice tracking accuracy</span>
+          </div>
+          <div class="roadmap-item">
+            <span class="roadmap-icon">⚡</span>
+            <span>Quality-of-life interface updates</span>
+          </div>
+          <div class="roadmap-item">
+            <span class="roadmap-icon">🛠️</span>
+            <span>Ongoing performance optimizations</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="cta-container">
+        <div class="cta-inner">
+          <h2>Ready to start your VTuber journey?</h2>
+          <p>Download Chibi-FX today for free and bring your avatar to life in minutes.</p>
+          <a href="https://geraldglitch.itch.io/chibifx" target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-primary">
+            Download Free
+            <svg class="btn-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <span class="logo-emoji">🐱</span>
+          <span>Chibi<span class="logo-highlight">FX</span></span>
+        </div>
+        <p class="footer-copy">
+          Made with ❤️ and Godot Engine. © 2026 Chibi-FX. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- STICKY HEADER JS -->
+    <script>
+      window.addEventListener('scroll', function() {
+        const navbar = document.getElementById('navbar');
+        if (window.scrollY > 20) {
+          navbar.classList.add('navbar-scrolled');
+        } else {
+          navbar.classList.remove('navbar-scrolled');
+        }
+      });
+    </script>
+  </body>
+</html>
