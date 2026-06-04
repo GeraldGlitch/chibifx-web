@@ -19,6 +19,9 @@
   --clr-primary-dark: #458234;
   --clr-primary-alpha: rgba(91, 168, 72, 0.12);
 
+  --clr-kofi: #29abe0;
+  --clr-kofi-hover: #4fc3f7;
+
   --clr-text: #eeeeee;
   --clr-text-muted: #a0a2ad;
   --clr-text-dim: #737580;
@@ -39,7 +42,9 @@
 }
 
 /* --- 2. Reset & Global Styles --- */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -75,7 +80,10 @@ img {
 }
 
 /* Typography Scale */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-display);
   font-weight: 700;
   line-height: 1.2;
@@ -170,6 +178,24 @@ h1, h2, h3, h4 {
   transform: translateY(0);
 }
 
+.btn-kofi {
+  background-color: var(--clr-kofi);
+  color: #ffffff;
+}
+
+.btn-kofi:hover {
+  background-color: var(--clr-kofi-hover);
+  transform: translateY(-2px);
+}
+
+.btn-kofi:active {
+  transform: translateY(0);
+}
+
+.btn-text-short {
+  display: none;
+}
+
 .btn-secondary {
   background-color: transparent;
   color: var(--clr-text);
@@ -255,6 +281,12 @@ h1, h2, h3, h4 {
   color: var(--clr-primary-light);
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 /* --- 5. Hero Section --- */
 .hero {
   padding-top: 150px;
@@ -302,9 +334,20 @@ h1, h2, h3, h4 {
 }
 
 @keyframes pulse-dot {
-  0% { transform: scale(0.9); opacity: 0.6; }
-  50% { transform: scale(1.2); opacity: 1; }
-  100% { transform: scale(0.9); opacity: 0.6; }
+  0% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(0.9);
+    opacity: 0.6;
+  }
 }
 
 .hero-content h1 {
@@ -358,14 +401,22 @@ h1, h2, h3, h4 {
 .mascot-img {
   width: 320px;
   height: auto;
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.4));
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
   animation: float-mascot 6s ease-in-out infinite;
 }
 
 @keyframes float-mascot {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .floating-badge {
@@ -397,15 +448,31 @@ h1, h2, h3, h4 {
 }
 
 @keyframes float-badge-1 {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 @keyframes float-badge-2 {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(8px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(8px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /* --- 6. Features Section --- */
@@ -462,7 +529,7 @@ h1, h2, h3, h4 {
 
 .spotlight-mascot {
   width: 240px;
-  filter: drop-shadow(0 15px 30px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.3));
 }
 
 .mascot-spotlight-content h2 {
@@ -673,7 +740,8 @@ blockquote cite {
   }
 
   .nav-menu {
-    display: none; /* simple hidden layout for mobile nav without overcoding hamburger */
+    display: none;
+    /* simple hidden layout for mobile nav without overcoding hamburger */
   }
 }
 
@@ -703,5 +771,28 @@ blockquote cite {
     flex-direction: column;
     gap: 16px;
     text-align: center;
+  }
+
+  .nav-actions .btn {
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-kofi .btn-text-full {
+    display: none;
+  }
+
+  .btn-kofi .btn-text-short {
+    display: inline;
+  }
+
+  .nav-actions {
+    gap: 8px;
+  }
+
+  .nav-actions .btn-sm {
+    padding: 8px 14px;
+    font-size: 0.85rem;
   }
 }
