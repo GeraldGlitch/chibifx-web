@@ -1,8 +1,8 @@
 {
-    "version": "1",
+    "version": "2",
     "devmessage": "1",
     "message_title": "Add the title here",
     "message_msg": "type message here",
-    "update_title": "There is a new update available",
-    "update_msg": "Hello there is a new update available\nkeansdklfjkslaer\njdklsajkfljdskla"
+    "update_title": "Update v1.0.0 is now available :3",
+    "update_msg": "- Changes are now saved persistently\n- Process animation section implemented: \n  You can now upload your audio and the character automatically applies the animations\n  Currently supports .wav and .ogg formats but works better with .ogg\n  Stay tunned on next updates for this section to be improved"
 }
