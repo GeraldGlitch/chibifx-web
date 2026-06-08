@@ -1,8 +1,8 @@
 {
-    "version": "2",
+    "version": "3",
     "devmessage": "2",
     "message_title": "Minor bugs identified in live motion and process animation modules",
     "message_msg": "The shortcut keys does not works when the app is on background\nI am fixing that as soon as possible, also on the process animation section\nwhen I override a status manually it omits all the subsequent statuses,\nthat is not the intended flow so I am correcting that, both fixes will be completed on next update, stay tunned",
-    "update_title": "Update v1.0.0 is now available :3",
-    "update_msg": "- Changes are now saved persistently\n- Process animation section implemented: \n  You can now upload your audio and the character automatically applies the animations\n  Currently supports .wav and .ogg formats but works better with .ogg\n  Stay tunned on next updates for this section to be improved"
+    "update_title": "Update v1.0.1 is now available :3",
+    "update_msg": "- Big improvement in the Process Animation module, now you can override statuses after generating the frames\n without losing the subsequent frames, stay tuned for next updates"
 }
